@@ -15,7 +15,9 @@ logger = logging.getLogger(__name__)
 
 
 # Create your views here.
-
+class AboutView(generic.DetailView):
+    template_name = 'onlinecourse/course_list_bootstrap.html'
+    context_object_name = 'About'
 
 # Create an `about` view to render a static about page
 # def about(request):
